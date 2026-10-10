@@ -26,12 +26,14 @@ import Video from './Components/Video';
 
 
 // VIDEOS.map( video ) -> za svaki video koji imamo radimo varijablu(id, title, url, cover)
-
-
 const App = () => {
     return (
         <>
-            < AllVideos />
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<AllVideos/>}/>
+                </Routes>
+            </BrowserRouter>
             {/* < AllVideos /> */}
             {/* <BrowserRouter>
                 <Routes>
