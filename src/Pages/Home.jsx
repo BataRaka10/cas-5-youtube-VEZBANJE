@@ -1,5 +1,5 @@
 
-// import AllVideos from "../Components/AllVideos";
+import AllVideos from "../Components/AllVideos";
 
 
 const Home = () => {
@@ -11,6 +11,9 @@ const Home = () => {
     )
 }
 
+export default Home;
+
+
 // const Home = () => {
 //     return (
 //         <>
@@ -19,5 +22,3 @@ const Home = () => {
 //         </>
 //     );
 // };
-
-export default Home;

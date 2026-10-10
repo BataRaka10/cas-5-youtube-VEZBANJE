@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
 // import VIDEOS from "./../videos.json"
-
+import VIDEOS from "./../videos.json"
 
 // useParams() = izvlaci parametre iz adresa
 // const { id } = hook
@@ -16,21 +16,17 @@ const Video = () => {
     // domaci
     // let videoFound = null;
     let videoFound = null;
-1   
+
     // if (video.id == id) ako je id od nekog videa iz video.json isti kao id koji smo prosledili ovde /video/1
-
     // forEach petlja koja prolazi preko svih video klipova iz video.json
-    VIDEOS.forEach(video => {
+    VIDEOS.forEach( video => {
         if (video.id == id) {
-            // console.log("VIDEO FOUND")
+            // console.log("video found")
             videoFound = video
-        } 
+        }
     })
-
+    console.log(videoFound)
     // console.log(videoFound)
-    if (videoFound === null) {
-        return <h1>This video does not exist</h1>
-    }
 
     // VIDEOS.forEach(video => {
         // if (video.id == id)  {
@@ -49,8 +45,8 @@ const Video = () => {
     return (
         <>
             <h3>{ videoFound.title }</h3>
-            <h4>{ videoFound.url }</h4>
-            <iframe src={ videoFound.url } ></iframe>
+            <p>{ videoFound.url }</p>
+            <iframe src={ videoFound.url }></iframe>
             {/* <h3>{ videoFound.title }</h3>
             <p>{ videoFound.url }</p>
             <iframe src={videoFound.url}> */}

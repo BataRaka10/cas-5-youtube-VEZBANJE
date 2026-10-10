@@ -1,7 +1,7 @@
 
-// import VIDEOS from "./../videos.json"
-// import VIDEOS from "./../videos.json" -> ./../ moramo da izadjemo iz Componentsfoldera = ./ trenutni folder -- ../ korak nazad
-// import VIDEOS from "./../videos.json"
+// import VIDEOS from "./../videos.json" -> ./../ moramo da izadjemo iz Componentsfoldera = ./ trenutni folder -- ../ korak nazad"
+
+import VIDEOS from "./../videos.json"
 
 
 const GetAllVideos = () => {
@@ -12,7 +12,7 @@ const GetAllVideos = () => {
                     <img src={ video.cover } alt="" />
                     <h3>{ video.title }</h3>
                 </a>
-            }) }
+            } ) }
         </>
     )
 };
