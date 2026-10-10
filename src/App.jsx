@@ -24,16 +24,14 @@ import Video from './Components/Video';
 // stari nacin function App() {}
 // radimo petnlju na VIDEOS.map( video)
 
+
 // VIDEOS.map( video ) -> za svaki video koji imamo radimo varijablu(id, title, url, cover)
+
+
 const App = () => {
     return (
         <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path='/' element={<Home/>}/>
-                    <Route path='/video/:id' element={<Video />}/>
-                </Routes>
-            </BrowserRouter>
+            < AllVideos />
             {/* < AllVideos /> */}
             {/* <BrowserRouter>
                 <Routes>
@@ -48,6 +46,7 @@ const App = () => {
 
 export default App;
 
+// const App = () => {} -> novi standard
 {/* { VIDEOS.map( video => {
     return <a href="" target='_blank'>
         <img src={ video.cover } alt="" />
