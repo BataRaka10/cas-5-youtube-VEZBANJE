@@ -1,23 +1,23 @@
 
-
+// import VIDEOS from "./../videos.json"
 // import VIDEOS from "./../videos.json" -> ./../ moramo da izadjemo iz Componentsfoldera = ./ trenutni folder -- ../ korak nazad
 // import VIDEOS from "./../videos.json"
 
 
-// const GetAllVideos = () => {
-//     return (
-//         <>
-//             { VIDEOS.map( video => {
-//                 return <a href={ video.url } target='_blank'>
-//                     <img src={ video.cover } alt="" />
-//                     <h3>{ video.title }</h3>
-//                 </a>
-//             } ) }
-//         </>
-//     )
-// };
+const GetAllVideos = () => {
+    return (
+        <>
+            { VIDEOS.map( video => {
+                return <a href={ video.url } target='_blank'>
+                    <img src={ video.cover } alt="" />
+                    <h3>{ video.title }</h3>
+                </a>
+            }) }
+        </>
+    )
+};
 
-// export default GetAllVideos;
+export default GetAllVideos;
 
 
 
