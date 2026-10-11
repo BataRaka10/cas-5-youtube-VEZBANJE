@@ -1,13 +1,14 @@
 
 // import AllVideos from "../Components/AllVideos";
 import AllVideos from "../Components/AllVideos"
+import SearchBar from "../Components/SearchBar";
 
 
 const Home = () => {
     return (
         <>
-            <h2>Glavna stranica</h2>
-            <AllVideos/>
+            <SearchBar />
+            <AllVideos />
         </>
     )
 }
