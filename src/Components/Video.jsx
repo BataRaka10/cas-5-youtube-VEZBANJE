@@ -3,30 +3,32 @@ import { useParams } from "react-router-dom";
 // import VIDEOS from "./../videos.json"
 import VIDEOS from "./../videos.json"
 
+
 // useParams() = izvlaci parametre iz adresa
 // const { id } = hook
 
 const Video = () => {
 
     const { id } = useParams();
-    console.log(id);
+    console.log(id)
 
     // const { id } = useParams();
     // console.log(id);
     // domaci
     // let videoFound = null;
-    let videoFound = null;
+    
+    let videoFound = null
 
     // if (video.id == id) ako je id od nekog videa iz video.json isti kao id koji smo prosledili ovde /video/1
     // forEach petlja koja prolazi preko svih video klipova iz video.json
     VIDEOS.forEach( video => {
+        // console.log("found")
         if (video.id == id) {
-            // console.log("video found")
+
             videoFound = video
         }
     })
     console.log(videoFound)
-    // console.log(videoFound)
 
     // VIDEOS.forEach(video => {
         // if (video.id == id)  {
@@ -38,6 +40,9 @@ const Video = () => {
     // });
 
     // console.log(videoFound);
+    if (videoFound === null) {
+        console.log("this video does not  exist")
+    }
     // if (videoFound === null) {
     //     return <h1>This Video does not exist</h1>
     // }

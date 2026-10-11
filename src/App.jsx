@@ -31,10 +31,11 @@ const App = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/' element={<AllVideos/>}/>
+                    <Route path='/' element={<Home/>}/>
+                    <Route path='/video/:id' element={<AllVideos />} />
                 </Routes>
             </BrowserRouter>
-            {/* < AllVideos /> */}
+            <AllVideos />
             {/* <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home />} />

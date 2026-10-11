@@ -1,15 +1,25 @@
 
-import AllVideos from "../Components/AllVideos";
+// import AllVideos from "../Components/AllVideos";
+import AllVideos from "../Components/AllVideos"
 
 
 const Home = () => {
     return (
         <>
             <h2>Glavna stranica</h2>
-            <AllVideos />
+            <AllVideos/>
         </>
     )
 }
+
+// const Home = () => {
+//     return (
+//         <>
+//             <h2>Glavna stranica</h2>
+//             <AllVideos />
+//         </>
+//     )
+// }
 
 export default Home;
 
